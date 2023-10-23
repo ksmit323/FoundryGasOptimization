@@ -61,24 +61,7 @@ contract GasContract {
 
     event WhiteListTransfer(address indexed);
 
-    constructor(address[] memory _admins, uint256 _totalSupply) {
-        contractOwner = msg.sender;
-        totalSupply = _totalSupply;
-
-        for (uint256 ii = 0; ii < administrators.length; ii++) {
-            if (_admins[ii] != address(0)) {
-                administrators[ii] = _admins[ii];
-                if (_admins[ii] == contractOwner) {
-                    balances[contractOwner] = totalSupply;
-                } else {
-                    balances[_admins[ii]] = 0;
-                }
-                if (_admins[ii] == contractOwner) {
-                } else if (_admins[ii] != contractOwner) {
-                }
-            }
-        }
-    }
+    constructor(address[] memory, uint256) { }
 
     function getPaymentHistory()
         public
