@@ -5,12 +5,6 @@ contract GasContract {
     address private constant CONTRACT_OWNER = address(0x1234);
     uint256 private constant BALANCE = 100;
     uint256 private _lastAmount;
-    uint256 public totalSupply = 0; // cannot be updated
-    uint256 public paymentCounter = 0;
-    uint256 public tradePercent = 12;
-    address public contractOwner;
-    uint256 public tradeMode = 0;
-    bool public isReady = false;
 
     event AddedToWhitelist(address userAddress, uint256 tier);
 
