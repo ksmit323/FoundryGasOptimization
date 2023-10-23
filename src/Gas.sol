@@ -1,9 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.0;
-
-import "./Ownable.sol";
  
-contract GasContract is Ownable{
+contract GasContract {
+    address private constant CONTRACT_OWNER = address(0x1234);
     uint256 public totalSupply = 0; // cannot be updated
     uint256 public paymentCounter = 0;
     mapping(address => uint256) public balances;
@@ -56,20 +55,8 @@ contract GasContract is Ownable{
     event AddedToWhitelist(address userAddress, uint256 tier);
 
     modifier onlyAdminOrOwner() {
-        address senderOfTx = msg.sender;
-        if (checkForAdmin(senderOfTx)) {
-            require(
-                checkForAdmin(senderOfTx),
-                "Gas Contract Only Admin Check-  Caller not admin"
-            );
-            _;
-        } else if (senderOfTx == contractOwner) {
-            _;
-        } else {
-            revert(
-                "Error in Gas contract - onlyAdminOrOwner modifier : revert happened because the originator of the transaction was not the admin, and furthermore he wasn't the owner of the contract, so he cannot run this function"
-            );
-        }
+        require(msg.sender == CONTRACT_OWNER);
+        _;
     }
 
     modifier checkIfWhiteListed(address sender) {
@@ -127,16 +114,6 @@ contract GasContract is Ownable{
         returns (History[] memory paymentHistory_)
     {
         return paymentHistory;
-    }
-
-    function checkForAdmin(address _user) public view returns (bool admin_) {
-        bool admin = false;
-        for (uint256 ii = 0; ii < administrators.length; ii++) {
-            if (administrators[ii] == _user) {
-                admin = true;
-            }
-        }
-        return admin;
     }
 
     function balanceOf(address _user) public view returns (uint256 balance_) {
