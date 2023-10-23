@@ -10,19 +10,19 @@ contract GasContract {
     event WhiteListTransfer(address indexed);
 
     modifier onlyAdminOrOwner() {
-        require(msg.sender == CONTRACT_OWNER);
-        _;
+        if (msg.sender == CONTRACT_OWNER) {
+            _;
+        } else {
+            revert();
+        }
     }
 
-    constructor(address[] memory, uint256) payable {}
+    constructor(address[] memory, uint256) payable { }
 
-    function transfer(address, uint256, string calldata) external {}
+    function transfer(address, uint256, string calldata) external { }
 
-    function addToWhitelist(
-        address _userAddrs,
-        uint256 _tier
-    ) external onlyAdminOrOwner {
-        require(_tier < 255);
+    function addToWhitelist(address _userAddrs, uint256 _tier) external onlyAdminOrOwner {
+        if (_tier > 254) revert();
         emit AddedToWhitelist(_userAddrs, _tier);
     }
 

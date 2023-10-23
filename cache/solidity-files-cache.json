@@ -48,7 +48,7 @@
       "versionRequirement": ">=0.5.0",
       "artifacts": {
         "DSTest": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "test.sol/DSTest.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "test.sol/DSTest.json"
         }
       }
     },
@@ -92,13 +92,13 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "CommonBase": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Base.sol/CommonBase.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "Base.sol/CommonBase.json"
         },
         "ScriptBase": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Base.sol/ScriptBase.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "Base.sol/ScriptBase.json"
         },
         "TestBase": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Base.sol/TestBase.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "Base.sol/TestBase.json"
         }
       }
     },
@@ -142,7 +142,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdAssertions": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdAssertions.sol/StdAssertions.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdAssertions.sol/StdAssertions.json"
         }
       }
     },
@@ -185,7 +185,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdChains": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdChains.sol/StdChains.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdChains.sol/StdChains.json"
         }
       }
     },
@@ -229,10 +229,10 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdCheats": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdCheats.sol/StdCheats.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdCheats.sol/StdCheats.json"
         },
         "StdCheatsSafe": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
         }
       }
     },
@@ -273,7 +273,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdError": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdError.sol/stdError.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdError.sol/stdError.json"
         }
       }
     },
@@ -314,7 +314,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdInvariant": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdInvariant.sol/StdInvariant.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdInvariant.sol/StdInvariant.json"
         }
       }
     },
@@ -357,7 +357,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "stdJson": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdJson.sol/stdJson.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdJson.sol/stdJson.json"
         }
       }
     },
@@ -398,7 +398,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdMath": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdMath.sol/stdMath.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdMath.sol/stdMath.json"
         }
       }
     },
@@ -441,10 +441,10 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdStorage": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdStorage.sol/stdStorage.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdStorage.sol/stdStorage.json"
         },
         "stdStorageSafe": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
         }
       }
     },
@@ -487,7 +487,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "StdStyle": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdStyle.sol/StdStyle.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdStyle.sol/StdStyle.json"
         }
       }
     },
@@ -531,7 +531,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdUtils": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "StdUtils.sol/StdUtils.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "StdUtils.sol/StdUtils.json"
         }
       }
     },
@@ -589,7 +589,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "Test": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Test.sol/Test.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "Test.sol/Test.json"
         }
       }
     },
@@ -630,10 +630,10 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "Vm": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Vm.sol/Vm.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "Vm.sol/Vm.json"
         },
         "VmSafe": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Vm.sol/VmSafe.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "Vm.sol/VmSafe.json"
         }
       }
     },
@@ -674,7 +674,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "console.sol/console.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "console.sol/console.json"
         }
       }
     },
@@ -715,7 +715,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "console2.sol/console2.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "console2.sol/console2.json"
         }
       }
     },
@@ -756,14 +756,55 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "IMulticall3": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
         }
       }
     },
     "src/Gas.sol": {
+      "lastModificationDate": 1698050415066,
+      "contentHash": "3df399998da0de927921fc5ffd1ed515",
+      "sourceName": "src/Gas.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.21",
+      "artifacts": {
+        "GasContract": {
+          "0.8.21+commit.d9974bed.Linux.gcc": "Gas.sol/GasContract.json"
+        }
+      }
+    },
+    "src/Gas_Original.sol": {
       "lastModificationDate": 1697773051307,
       "contentHash": "d525aabba2043d6ca4815bea001725fd",
-      "sourceName": "src/Gas.sol",
+      "sourceName": "src/Gas_Original.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -799,10 +840,10 @@
       "versionRequirement": "=0.8.0",
       "artifacts": {
         "Constants": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Gas.sol/Constants.json"
+          "0.8.0+commit.c7dfd78e.Linux.gcc": "Gas_Original.sol/Constants.json"
         },
         "GasContract": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Gas.sol/GasContract.json"
+          "0.8.0+commit.c7dfd78e.Linux.gcc": "Gas_Original.sol/GasContract.json"
         }
       }
     },
@@ -905,7 +946,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "GasTest": {
-          "0.8.0+commit.c7dfd78e.Linux.gcc": "Gas.UnitTests.t.sol/GasTest.json"
+          "0.8.21+commit.d9974bed.Linux.gcc": "Gas.UnitTests.t.sol/GasTest.json"
         }
       }
     }
