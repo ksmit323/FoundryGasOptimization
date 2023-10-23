@@ -12,15 +12,6 @@ contract GasContract {
     uint256 public tradeMode = 0;
     address[5] public administrators;
     bool public isReady = false;
-
-    History[] public paymentHistory; // when a payment was updated
-
-    struct History {
-        uint256 lastUpdate;
-        address updatedBy;
-        uint256 blockNumber;
-    }
-    uint256 wasLastOdd = 1;
     
     struct ImportantStruct {
         uint256 amount;
@@ -42,32 +33,9 @@ contract GasContract {
 
     constructor(address[] memory, uint256) payable { }
 
-    function getPaymentHistory()
-        public
-        payable
-        returns (History[] memory paymentHistory_)
-    {
-        return paymentHistory;
-    }
 
     function balanceOf(address) external pure returns (uint256) {
         return BALANCE;
-    }
-
-    function addHistory(address _updateAddress, bool _tradeMode)
-        public
-        returns (bool status_, bool tradeMode_)
-    {
-        History memory history;
-        history.blockNumber = block.number;
-        history.lastUpdate = block.timestamp;
-        history.updatedBy = _updateAddress;
-        paymentHistory.push(history);
-        bool[] memory status = new bool[](tradePercent);
-        for (uint256 i = 0; i < tradePercent; i++) {
-            status[i] = true;
-        }
-        return ((status[0] == true), _tradeMode);
     }
 
     function transfer(
