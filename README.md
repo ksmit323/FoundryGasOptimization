@@ -1,3 +1,7 @@
+Starting Deployment Cost:2,541,445 gas
+Current Deployment Cost: 173,058 gas
+Reduction: 93%
+
 # GAS OPTIMIZATION 
 
 - Task is to edit and optimize the Gas.sol contract. 
