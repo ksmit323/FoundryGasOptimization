@@ -1,5 +1,5 @@
-Starting Deployment Cost:2,541,445 gas
-Current Deployment Cost: 173,058 gas
+Starting Deployment Cost: &nbsp;&nbsp;2,541,445 gas  
+Current Deployment Cost: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;173,058 gas  
 Reduction: 93%
 
 # GAS OPTIMIZATION 
