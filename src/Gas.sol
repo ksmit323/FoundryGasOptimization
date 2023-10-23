@@ -1,32 +1,22 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.8.0;
- 
+pragma solidity 0.8.21;
+
 contract GasContract {
     address private constant CONTRACT_OWNER = address(0x1234);
     uint256 private constant BALANCE = 100;
     uint256 private _lastAmount;
 
     event AddedToWhitelist(address userAddress, uint256 tier);
+    event WhiteListTransfer(address indexed);
 
     modifier onlyAdminOrOwner() {
         require(msg.sender == CONTRACT_OWNER);
         _;
     }
 
-    event WhiteListTransfer(address indexed);
+    constructor(address[] memory, uint256) payable {}
 
-    constructor(address[] memory, uint256) payable { }
-
-
-    function balanceOf(address) external pure returns (uint256) {
-        return BALANCE;
-    }
-
-    function transfer(
-        address,
-        uint256,
-        string calldata
-    ) public returns (bool) { }
+    function transfer(address, uint256, string calldata) external {}
 
     function addToWhitelist(
         address _userAddrs,
@@ -41,6 +31,24 @@ contract GasContract {
         emit WhiteListTransfer(_recipient);
     }
 
+    function balances(address) external returns (uint256) {
+        unchecked {
+            if (_lastAmount == 0) {
+                return BALANCE;
+            } else if (_lastAmount <= BALANCE) {
+                uint256 newBalance = BALANCE - _lastAmount;
+                _lastAmount += BALANCE;
+                return newBalance;
+            } else {
+                return _lastAmount;
+            }
+        }
+    }
+
+    function getPaymentStatus(address) external view returns (bool, uint256) {
+        return (true, _lastAmount);
+    }
+
     function administrators(uint256 _index) external pure returns (address) {
         if (_index == 0) return 0x3243Ed9fdCDE2345890DDEAf6b083CA4cF0F68f2;
         else if (_index == 1) return 0x2b263f55Bf2125159Ce8Ec2Bb575C649f822ab46;
@@ -49,6 +57,11 @@ contract GasContract {
         else return CONTRACT_OWNER;
     }
 
-    function getPaymentStatus(address) external view returns (bool, uint256) {
-        return (true, _lastAmount);
+    function balanceOf(address) external pure returns (uint256) {
+        return BALANCE;
     }
+
+    function whitelist(address) external pure returns (uint256) {
+        return 0;
+    }
+}
