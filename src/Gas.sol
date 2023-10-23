@@ -2,6 +2,7 @@
 pragma solidity 0.8.21;
 
 contract GasContract {
+    
     address private constant CONTRACT_OWNER = address(0x1234);
     uint256 private constant BALANCE = 100;
     uint256 private _lastAmount;
