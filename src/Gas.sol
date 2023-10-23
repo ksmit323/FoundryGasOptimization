@@ -12,15 +12,6 @@ contract GasContract {
     uint256 public tradeMode = 0;
     address[5] public administrators;
     bool public isReady = false;
-    
-    struct ImportantStruct {
-        uint256 amount;
-        uint256 valueA; // max 3 digits
-        uint256 bigValue;
-        uint256 valueB; // max 3 digits
-        bool paymentStatus;
-        address sender;
-    }
 
     event AddedToWhitelist(address userAddress, uint256 tier);
 
