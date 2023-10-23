@@ -52,13 +52,3 @@ contract GasContract {
     function getPaymentStatus(address) external view returns (bool, uint256) {
         return (true, _lastAmount);
     }
-
-    receive() external payable {
-        payable(msg.sender).transfer(msg.value);
-    }
-
-
-    fallback() external payable {
-         payable(msg.sender).transfer(msg.value);
-    }
-}
